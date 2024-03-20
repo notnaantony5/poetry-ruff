@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "sql-framework"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = ["ALL"]
+ignore = ["RUF001", "T201"]
+
+fixable = ["ALL"]
+unfixable = []
+exclude = [".git", ".ruff_cache"]
+
+line-length = 79
+target-version = "py310"
